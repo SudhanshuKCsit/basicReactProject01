@@ -1,5 +1,5 @@
 import ExpenseItem from "./ExpenseItem";
-import React, { Fragment } from "react";
+import Card from "../UI/Card";
 import "./Expenses.css";
 const Expenses = () => {
   const expenses = [
@@ -27,7 +27,7 @@ const Expenses = () => {
   ];
 
   return (
-    <Fragment>
+    <Card className ="expenses">
       {expenses.map((expense) => {
         return (
           <ExpenseItem
@@ -40,7 +40,7 @@ const Expenses = () => {
         );
       })}
       ;
-    </Fragment>
+    </Card>
   );
 };
 

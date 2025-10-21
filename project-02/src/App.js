@@ -3,7 +3,7 @@ import React,{Fragment} from "react";
 function App(props) {
   return (
     <Fragment >
-      <Expenses id = {props.id}></Expenses>
+      <Expenses></Expenses>
     </Fragment>
   );
 }
